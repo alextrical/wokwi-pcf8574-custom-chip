@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "author": "Anderson Costa",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 150, "left": 20, "attrs": {} },
+    { "type": "chip-pcf8574", "id": "chip1", "top": 50, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 0,
+      "left": 110,
+      "attrs": { "color": "#400", "lightColor": "red", "label": "P0" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 0,
+      "left": 140,
+      "attrs": { "color": "#400", "lightColor": "red", "label": "P1" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 0,
+      "left": 170,
+      "attrs": { "color": "#400", "lightColor": "red", "label": "P2" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "top": 0,
+      "left": 200,
+      "attrs": { "color": "#400", "lightColor": "red", "label": "P3" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led5",
+      "top": 0,
+      "left": 230,
+      "attrs": { "color": "#400", "lightColor": "red", "label": "P4" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led6",
+      "top": 0,
+      "left": 260,
+      "attrs": { "color": "#400", "lightColor": "red", "label": "P5" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led7",
+      "top": 0,
+      "left": 290,
+      "attrs": { "color": "#400", "lightColor": "red", "label": "P6" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led8",
+      "top": 0,
+      "left": 320,
+      "attrs": { "color": "#400", "lightColor": "red", "label": "P7" }
+    }
+  ],
+  "connections": [
+    [ "led1:C", "led2:C", "black", [ "v0" ] ],
+    [ "led2:C", "led3:C", "black", [ "v0" ] ],
+    [ "led3:C", "led4:C", "black", [ "v0" ] ],
+    [ "led4:C", "led5:C", "black", [ "v0" ] ],
+    [ "led5:C", "led6:C", "black", [ "v0" ] ],
+    [ "led6:C", "led7:C", "black", [ "v0" ] ],
+    [ "led7:C", "led8:C", "black", [ "v0" ] ],
+    [ "chip1:P0", "led1:A", "green", [ "h0" ] ],
+    [ "chip1:P1", "led2:A", "green", [ "h0" ] ],
+    [ "chip1:P2", "led3:A", "green", [ "h0" ] ],
+    [ "chip1:P3", "led4:A", "green", [ "h0" ] ],
+    [ "chip1:P4", "led5:A", "green", [ "h0" ] ],
+    [ "chip1:P5", "led6:A", "green", [ "h0" ] ],
+    [ "chip1:P6", "led7:A", "green", [ "h0" ] ],
+    [ "chip1:P7", "led8:A", "green", [ "v-0.55", "h248.79" ] ],
+    [ "chip1:VCC", "uno:5V", "red", [ "h-25", "v260", "h487.33" ] ],
+    [ "chip1:GND", "uno:GND.2", "black", [ "h-35", "v280", "h312.46" ] ],
+    [ "chip1:SDA", "uno:A4", "purple", [ "h-45", "v300", "h374.6" ] ],
+    [ "chip1:SCL", "uno:A5", "yellow", [ "h-55", "v320", "h436.73" ] ],
+    [ "uno:GND.3", "led8:C", "black", [ "v26", "h175", "v-294.98" ] ]
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "wokwi-custom-chip",
+  "name": "PCF8574",
+  "author": "Anderson Costa",
+  "pins": [
+    "INT",
+    "SCL",
+    "SDA",
+    "GND",
+    "VCC",
+    "A0",
+    "A1",
+    "A2",
+    "P7",
+    "P6",
+    "P5",
+    "P4",
+    "P3",
+    "P2",
+    "P1",
+    "P0"
+  ]
+}
