@@ -65,7 +65,7 @@ void chip_init() {
   
   // The following message will appear in the browser's DevTools console:
   // printf("Hello from custom chip!\n");
-  printf("Hello from 24c01 at address %x \n", ADDRESS);
+  printf("Hello from PCF8574 at address %x \n", ADDRESS);
 }
 
 
